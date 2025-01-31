@@ -58,7 +58,7 @@ export const getBoneList = () => ([
   ["axial", "vertebral column", "parts", "costal facets"],
   ["axial", "vertebral column", "parts", "dens"],
   ["axial", "thorax", "parts of a rib", "head"],
-  ["axial", "thorax", "parts of a rib", "rib (right vs left)"],
+  // ["axial", "thorax", "parts of a rib", "rib (right vs left)"],
   ["axial", "thorax", "parts of a rib", "neck"],
   ["axial", "thorax", "parts of a rib", "tubercle"],
   ["axial", "thorax", "parts of a sternum", "sternum"],
