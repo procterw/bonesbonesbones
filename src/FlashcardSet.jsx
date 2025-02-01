@@ -65,13 +65,27 @@ export const FlashcardSet = ({ boneList }) => {
         minHeight: 300,
         maxHeight: 700,
         flexDirection: 'column',
+        // gap: 5,
       }}
     >
+
+      <h4 style={{
+        fontSize: 12,
+        margin: 0,
+        padding: 15,
+        // borderBottom: '1px solid #ddd',
+        fontStyle: 'italic',
+        color: '#333',
+      }}>
+        🦴 🦴 🦴 What bone or feature is this? 🦴 🦴 🦴
+      </h4>
+
       <div style={{
         margin: '0 0 10px',
-        padding: '20px 10px 5px',
+        padding: '0 12px',
+        // padding: '20px 10px 5px',
         background: 'white',
-        height: '60%',
+        height: '55%',
         maxHeight: 500,
         display: 'flex',
         flexDirection: 'column',
@@ -86,6 +100,7 @@ export const FlashcardSet = ({ boneList }) => {
             width: '100%',
             maxWidth: 450,
             objectFit: 'contain',
+            boxShadow: '0px 2px 6px 1px rgba(0,0,0,0.1)',
           }} />
       </div>
 
@@ -113,12 +128,12 @@ export const FlashcardSet = ({ boneList }) => {
               width: '100%',
               height: '100%',
               fontStyle: 'italic',
-              fontSize: 24,
-              fontWeight: 300,
+              fontSize: 16,
+              fontWeight: 700,
               // letterSpacing: 5,
               padding: 0,
-              color: '#999',
-              borderRadius: 0,
+              color: '#666',
+              // borderRadius: 0,
               border: 'none',
               background: '#eee',
             }}
@@ -135,13 +150,9 @@ export const FlashcardSet = ({ boneList }) => {
           display: 'flex',
           gap: 10,
           padding: '5px 10px',
+          fontSize: 12,
         }}
       >
-
-        <span style={{ style: 'inline-block', height: 50, padding: '14px', fontSize: 12, fontStyle: 'italic' }}>
-          { Object.keys(boneList).length - seenCards.length }
-          { ` bones left` }
-        </span>
 
         <button
           onClick={() => {
@@ -150,11 +161,11 @@ export const FlashcardSet = ({ boneList }) => {
           style={{
             flexGrow: 1,
             height: 50,
-            borderRadius: 0,
+            // borderRadius: 0,
             background: '#ffd8d8',
           }}
         >
-          I didn't know this
+          Didn't know 💀
         </button>
 
         <button
@@ -165,12 +176,23 @@ export const FlashcardSet = ({ boneList }) => {
           style={{
             flexGrow: 1,
             height: 50,
-            borderRadius: 0,
+            // borderRadius: 0,
             background: '#dafcea',
           }}
         >
-          I knew this
+          Knew it 🦴
         </button>
+      </div>
+
+      <div>
+        <span style={{ style: 'inline-block', height: 50, padding: '14px', fontSize: 12, fontStyle: 'italic' }}>
+          { Object.keys(boneList).length - seenCards.length }
+          { ` bones to go` }
+        </span>
+
+        <span style={{ style: 'block', height: 50, padding: '14  px', fontSize: 12, fontStyle: 'italic' }}>
+          {`↓ ↓ settings ↓ ↓`}
+        </span>
       </div>
 
       {/* <pre> */}

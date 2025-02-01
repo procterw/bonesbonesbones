@@ -10,12 +10,13 @@ export const DefinitionCard = ({ activeCard }) => {
       display: 'flex',
       flexDirection: 'column',
       gap: 18,
+      fontSize: 14,
     }}
     >
       <li style={{  }}>
         {activeCard.skeleton} {` skeleton > `} {activeCard.region} {` > `} {activeCard.subRegion}
       </li>
-      <li style={{ fontSize: 24, fontStyle: 'normal', fontWeight: 400 }}>
+      <li style={{ fontSize: 18, fontStyle: 'normal', fontWeight: 400 }}>
         {activeCard.name}
       </li>
     </ul>
