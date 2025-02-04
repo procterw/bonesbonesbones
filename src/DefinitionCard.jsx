@@ -9,15 +9,22 @@ export const DefinitionCard = ({ activeCard }) => {
       textAlign: 'center',
       display: 'flex',
       flexDirection: 'column',
-      gap: 18,
-      fontSize: 14,
+      alignItems: 'center',
+      justifyContent: 'center',
+      height: '100%',
+      // gap: 18,
+      // fontSize: 16,
     }}
     >
-      <li style={{  }}>
-        {activeCard.skeleton} {` skeleton > `} {activeCard.region} {` > `} {activeCard.subRegion}
-      </li>
-      <li style={{ fontSize: 18, fontStyle: 'normal', fontWeight: 400 }}>
-        {activeCard.name}
+      {/* <li style={{  }}> */}
+        {/* {activeCard.region} {` > `} {activeCard.subRegion} */}
+      {/* </li> */}
+      <li style={{ fontSize: 15, fontStyle: 'normal', fontWeight: 400 }}>
+        {activeCard.region} {` → `}
+        {activeCard.subRegion} {` → `}
+        <b style={{ fontSize: 18 }}>
+          {activeCard.name}
+        </b>
       </li>
     </ul>
   );

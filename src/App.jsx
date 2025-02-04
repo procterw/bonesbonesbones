@@ -11,9 +11,7 @@ const defaultSettings = {
 
 function App() {
   const [settings, updateSettings] = useState(defaultSettings);
-  const { boneList, filters, selectedFilters, setSelectedFilters } = useBoneList();
-
-  console.log(boneList);
+  const bl = useBoneList();
 
   return (
     <div style={{
@@ -41,31 +39,33 @@ function App() {
         height: '100vh',
         minHeight: 600,
       }}> */}
-        <FlashcardSet boneList={boneList} />
+        <FlashcardSet {...bl} />
 
         <ul style={{
           listStyle: 'none',
           textAlign: 'left',
           width: '100%',
           maxWidth: 600,
-          margin: 0,
+          margin: '10px 0',
           padding: 0,
           // width: '100%',
         }}>
-          { filters.map((f) => (
+          { bl.filters.map((f) => (
             <li>
-              <label style={{}}>
+              <label style={{
+                fontSize: 18,
+              }}>
                 <input
                   type="checkbox"
-                  checked={selectedFilters.includes(f)}
+                  checked={bl.selectedFilters.includes(f)}
                   style={{
                     marginRight: 10,
                   }}
                   onClick={() => {
-                    if (selectedFilters.includes(f)) {
-                      setSelectedFilters(selectedFilters.filter(_f => f !== _f));
+                    if (bl.selectedFilters.includes(f)) {
+                      bl.setSelectedFilters(bl.selectedFilters.filter(_f => f !== _f));
                     } else {
-                      setSelectedFilters([...selectedFilters, f]);
+                      bl.setSelectedFilters([...bl.selectedFilters, f]);
                     }
                   }}
                 />

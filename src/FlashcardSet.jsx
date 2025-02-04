@@ -1,48 +1,27 @@
 import { useState, useEffect } from 'react';
 import { DefinitionCard } from './DefinitionCard';
 
-export const pickFromBoneList = (boneList, seenCards, activeCard) => {
-  if (activeCard) {
-    seenCards = [...seenCards, activeCard];
-  }
-  const options = Object.values(boneList).filter(b => !seenCards.map(sc => sc.id).includes(b.id));
-
-  if (!options.length) return null;
-
-  const index = Math.floor(Math.random() * options.length);
-
-  return options[index];
-};
-
-export const FlashcardSet = ({ boneList }) => {
-  const [activeCard, setActiveCard] = useState(null);
-  const [seenCards, setSeenCards] = useState([]);
+export const FlashcardSet = ({
+  boneList,
+  clearCards,
+  activeCard,
+  nextRight,
+  nextWrong,
+}) => {
 
   const [isDefRevealed, setIsDefRevealed] = useState(false);
   const toggleDef = () => setIsDefRevealed(!isDefRevealed);
-  // const [iPicRevealed, setIPicRevealed] = useState(true);
-  // const togglePic = () => setIsPicRevealed(!isPicRevealed);
-
-  const removeCard = (card) => {
-    setSeenCards([...seenCards, card]);
-  }
-
-  const nextCard = () => {
-    setIsDefRevealed(false);
-    const _activeCard = pickFromBoneList(boneList, seenCards, activeCard);
-    setActiveCard(_activeCard);
-  };
 
   useEffect(() => {
-    nextCard();
-  }, [boneList]);
+    setIsDefRevealed(false);
+  }, [activeCard])
 
   if (!activeCard) {
     return (
       <div style={{ display: 'flex', flexDirection: 'column', margin: 50, gap: 50 }}>
         No cards left smartie!
-        <button onClick={() => setSeenCards([])}>
-          Start over  
+        <button onClick={() => clearCards()}>
+          Start over
         </button>
       </div>
     );
@@ -156,7 +135,7 @@ export const FlashcardSet = ({ boneList }) => {
 
         <button
           onClick={() => {
-            nextCard();
+            nextWrong();
           }}
           style={{
             flexGrow: 1,
@@ -170,8 +149,7 @@ export const FlashcardSet = ({ boneList }) => {
 
         <button
           onClick={() => {
-            removeCard(activeCard);
-            nextCard();
+            nextRight();
           }}
           style={{
             flexGrow: 1,
@@ -186,7 +164,7 @@ export const FlashcardSet = ({ boneList }) => {
 
       <div>
         <span style={{ style: 'inline-block', height: 50, padding: '14px', fontSize: 12, fontStyle: 'italic' }}>
-          { Object.keys(boneList).length - seenCards.length }
+          { Object.keys(boneList).length }
           { ` bones to go` }
         </span>
 
