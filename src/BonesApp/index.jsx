@@ -1,16 +1,7 @@
-import { useState } from 'react'
-// import reactLogo from './assets/react.svg'
-// import viteLogo from '/vite.svg'
-import './App.css'
 import { FlashcardSet } from './FlashcardSet';
 import { useBoneList } from './useBoneList';
 
-const defaultSettings = {
-
-};
-
-function App() {
-  const [settings, updateSettings] = useState(defaultSettings);
+function BonesApp() {
   const bl = useBoneList();
 
   return (
@@ -19,26 +10,9 @@ function App() {
       width: '100%',
       minHeight: '100vh',
       overflow: 'scroll',
-      // justifyContent: 'center',
       alignItems: 'center',
       flexDirection: 'column',
-      // alignItems: 'center',
     }}>
-      {/* <div style={{
-        width: 400
-      }}>
-        Bones bones bones
-      </div> */}
-
-      {/* <div style={{
-        display: 'flex',
-        flexGrow: 1,
-        justifyContent: 'center',
-        width: '100%',
-        maxWidth: 600,
-        height: '100vh',
-        minHeight: 600,
-      }}> */}
         <FlashcardSet {...bl} />
 
         <ul style={{
@@ -48,7 +22,6 @@ function App() {
           maxWidth: 600,
           margin: '10px 0',
           padding: 0,
-          // width: '100%',
         }}>
           { bl.filters.map((f) => (
             <li>
@@ -75,9 +48,8 @@ function App() {
             </li>
           ))}
         </ul>
-      {/* </div> */}
     </div>
   )
 }
 
-export default App
+export default BonesApp
