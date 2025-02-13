@@ -15,7 +15,7 @@ function MusclesApp() {
       flexDirection: 'column',
     }}>
         <FlashcardSet {...ml} />
-{/* 
+
         <ul style={{
           listStyle: 'none',
           textAlign: 'left',
@@ -24,31 +24,30 @@ function MusclesApp() {
           margin: '10px 0',
           padding: 0,
         }}>
-          { bl.filters.map((f) => (
+          { ml.filters.map((f) => (
             <li>
               <label style={{
                 fontSize: 18,
               }}>
                 <input
                   type="checkbox"
-                  checked={bl.selectedFilters.includes(f)}
+                  checked={ml.selectedFilters.includes(f)}
                   style={{
                     marginRight: 10,
                   }}
                   onClick={() => {
-                    if (bl.selectedFilters.includes(f)) {
-                      bl.setSelectedFilters(bl.selectedFilters.filter(_f => f !== _f));
+                    if (ml.selectedFilters.includes(f)) {
+                      ml.setSelectedFilters(ml.selectedFilters.filter(_f => f !== _f));
                     } else {
-                      bl.setSelectedFilters([...bl.selectedFilters, f]);
+                      ml.setSelectedFilters([...ml.selectedFilters, f]);
                     }
                   }}
                 />
-
                 { f }
               </label>
             </li>
           ))}
-        </ul> */}
+        </ul>
     </div>
   )
 }

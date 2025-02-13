@@ -473,8 +473,8 @@ const muscleList = [
 import { useState, useEffect } from 'react';
 
 
-export const pickFromMuscleList = (activeCard) => {
-  const options = muscleList.filter(d => activeCard?.muscle !== d.muscle);
+export const pickFromMuscleList = (_muscleList, activeCard) => {
+  const options = _muscleList.filter(d => activeCard?.muscle !== d.muscle);
 
   if (!options.length) return null;
 
@@ -484,14 +484,16 @@ export const pickFromMuscleList = (activeCard) => {
 };
 
 export const useMuscleList = () => {
-  const [filteredMuscleList, setFilteredMuscleList] = useState([]);
-  const [filters, setFilters] = useState([]);
+  const [filteredMuscleList, setFilteredMuscleList] = useState(muscleList);
+  const [filters, setFilters] = useState(
+    muscleList.map(b => b.region).filter((value, index, array) => array.indexOf(value) === index)
+  );
   const [selectedFilters, setSelectedFilters] = useState([]);
   const [seenCards, setSeenCards] = useState([]);
   const [activeCard, setActiveCard] = useState(null);
 
   useEffect(() => {
-    setActiveCard(pickFromMuscleList(activeCard));
+    setActiveCard(pickFromMuscleList(filteredMuscleList, activeCard));
   }, []);
 
   useEffect(() => {
@@ -505,18 +507,29 @@ export const useMuscleList = () => {
   //   setFilteredMuscleList(processMuscleList(muscleList));
   // }, [muscleList]);
 
-  // useEffect(() => {
-  //   if (!Object.keys(filteredMuscleList).length) return;
-  //   let _muscleList = [...muscleList]
-  //     .filter(b => !(selectedFilters.length && !selectedFilters.includes(b[1])))
-  //     .filter(b => !seenCards.includes(getBoneId(b)));
+  useEffect(() => {
+    if (!filteredMuscleList.length) return;
 
-  //   const _filteredMuscleList = processMuscleList(_muscleList);
-  //   setFilteredMuscleList(_filteredMuscleList);
+    let _muscleList = muscleList
+      .filter(d => !(selectedFilters.length && !selectedFilters.includes(d.region)))
+      .filter(d => !seenCards.includes(d.muscle));
 
-  //   setActiveCard(pickFromMuscleList(_filteredMuscleList, activeCard));
+    console.log(_muscleList);
 
-  // }, [selectedFilters])
+    setFilteredMuscleList(_muscleList);
+
+    setActiveCard(pickFromMuscleList(_muscleList, activeCard));
+
+    // let _muscleList = [...muscleList]
+    //   .filter(b => !(selectedFilters.length && !selectedFilters.includes(b[1])))
+    //   .filter(b => !seenCards.includes(getBoneId(b)));
+
+    // const _filteredMuscleList = processMuscleList(_muscleList);
+    // setFilteredMuscleList(_filteredMuscleList);
+
+    // setActiveCard(pickFromMuscleList(_filteredMuscleList, activeCard));
+
+  }, [selectedFilters])
 
   // useEffect(() => {
   //   let _muscleList = [...muscleList]
@@ -536,22 +549,22 @@ export const useMuscleList = () => {
 
   return {
     muscleList: filteredMuscleList,
-    // filters,
-    // selectedFilters,
-    // setSelectedFilters,
+    filters,
+    selectedFilters,
+    setSelectedFilters,
     seenCards,
     pickFromMuscleList: (activeCard) => pickFromMuscleList(filteredMuscleList, activeCard),
     clearCards: () => {
-      // setSeenCards([]);
-      // setActiveCard(pickFromMuscleList(filteredMuscleList, null));
+      setSeenCards([]);
+      setActiveCard(pickFromMuscleList(filteredMuscleList, null));
     },
     activeCard,
     nextRight: () => {
       setSeenCards([...seenCards, activeCard.muscle]);
-      setActiveCard(pickFromMuscleList(activeCard));
+      setActiveCard(pickFromMuscleList(filteredMuscleList, activeCard));
     },
     nextWrong: () => {
-      setActiveCard(pickFromMuscleList(activeCard));
+      setActiveCard(pickFromMuscleList(filteredMuscleList, activeCard));
     },
   };
 };
