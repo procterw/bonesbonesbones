@@ -113,7 +113,7 @@ export const getBoneList = () => ([
   ["appendicular", "upper appengages", "carpals", "hamate"],
   ["appendicular", "upper appengages", "parts of the metacarpals", "base"],
   ["appendicular", "upper appengages", "parts of the metacarpals", "head"],
-  ["appendicular", "upper appengages", "types of metacarpals", "phalanges I-V"],
+  // ["appendicular", "upper appengages", "types of metacarpals", "phalanges I-V"],
   ["appendicular", "upper appengages", "parts of the phalanges", "proximal"],
   ["appendicular", "upper appengages", "parts of the phalanges", "middle"],
   ["appendicular", "upper appengages", "parts of the phalanges", "distal"],

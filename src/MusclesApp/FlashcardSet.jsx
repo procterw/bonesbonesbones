@@ -86,7 +86,7 @@ export const FlashcardSet = ({
             width: '100%',
             maxWidth: 450,
             objectFit: 'contain',
-            boxShadow: '0px 2px 6px 1px rgba(0,0,0,0.1)',
+            // boxShadow: '0px 2px 6px 1px rgba(0,0,0,0.1)',
           }} />
       </div>
 
