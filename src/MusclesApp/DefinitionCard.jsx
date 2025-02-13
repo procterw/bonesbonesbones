@@ -26,7 +26,7 @@ export const DefinitionCard = ({ activeCard }) => {
       </li>
       { activeCard.origin && (
         <li>
-          <b>{`Insertion: `}</b> {activeCard.origin} <b>{` > Origin: `}</b> { activeCard.insertion}
+          <b>{`Origin: `}</b> {activeCard.origin} <b>{` -> Insertion: `}</b> { activeCard.insertion}
         </li>
       )}
     </ul>

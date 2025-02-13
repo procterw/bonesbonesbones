@@ -32,6 +32,8 @@ export const FlashcardSet = ({
     );
   }
 
+  console.log(activeCard);
+
   // Just saving some effort on the image processing end!
   const jpgurl = new URL(`./assets/${activeCard.muscle}.jpg`, import.meta.url).href;
   const pngurl = new URL(`./assets/${activeCard.muscle}.png`, import.meta.url).href;
@@ -45,7 +47,7 @@ export const FlashcardSet = ({
         // justifyContent: 'center',
         width: '100%',
         maxWidth: 600,
-        height: '100vh',
+        height: 'calc(100vh - 50px)',
         minHeight: 300,
         maxHeight: 700,
         flexDirection: 'column',
@@ -53,7 +55,7 @@ export const FlashcardSet = ({
       }}
     >
 
-      <h4 style={{
+      {/* <h4 style={{
         fontSize: 12,
         margin: 0,
         padding: 15,
@@ -62,14 +64,14 @@ export const FlashcardSet = ({
         color: '#333',
       }}>
         💪 💪 💪 What muscle is this? 💪 💪 💪
-      </h4>
+      </h4> */}
 
       <div style={{
         margin: '0 0 10px',
         padding: '0 12px',
         // padding: '20px 10px 5px',
         background: 'white',
-        height: '55%',
+        height: '45%',
         maxHeight: 500,
         display: 'flex',
         flexDirection: 'column',
@@ -94,7 +96,7 @@ export const FlashcardSet = ({
         style={{
           listStyle: 'none',
           textAlign: 'left',
-          margin: '0 0 10px',
+          // margin: '0 0 5px',
           padding: '5px 10px',
           background: 'white',
           // minHeight: '25vh',
@@ -130,7 +132,7 @@ export const FlashcardSet = ({
         style={{
           listStyle: 'none',
           textAlign: 'left',
-          margin: '0 0 10px',
+          margin: '0 0 2px',
           padding: '5px 10px',
           background: 'white',
           // minHeight: '25vh',
@@ -212,11 +214,6 @@ export const FlashcardSet = ({
           {`↓ ↓ settings ↓ ↓`}
         </span>
       </div>
-
-      {/* <pre> */}
-        {/* { JSON.stringify(activeCard, null, 2) } */}
-        {/* {JSON.stringify(seenCards, null, 2)} */}
-      {/* </pre> */}
     </div>
   );
 };

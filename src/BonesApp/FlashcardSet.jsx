@@ -40,7 +40,7 @@ export const FlashcardSet = ({
         // justifyContent: 'center',
         width: '100%',
         maxWidth: 600,
-        height: '100vh',
+        height: 'calc(100vh - 50px)',
         minHeight: 300,
         maxHeight: 700,
         flexDirection: 'column',
@@ -48,7 +48,7 @@ export const FlashcardSet = ({
       }}
     >
 
-      <h4 style={{
+      {/* <h4 style={{
         fontSize: 12,
         margin: 0,
         padding: 15,
@@ -57,7 +57,7 @@ export const FlashcardSet = ({
         color: '#333',
       }}>
         🦴 🦴 🦴 What bone or feature is this? 🦴 🦴 🦴
-      </h4>
+      </h4> */}
 
       <div style={{
         margin: '0 0 10px',

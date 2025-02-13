@@ -9,7 +9,7 @@ function MusclesApp() {
     <div style={{
       display: 'flex',
       width: '100%',
-      minHeight: '100vh',
+      minHeight: 'calc(100vh - 50px)',
       overflow: 'scroll',
       alignItems: 'center',
       flexDirection: 'column',
