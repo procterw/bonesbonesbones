@@ -66,7 +66,7 @@ const muscleList = [
     "muscle": "extensor carpi radialis (brevis)",
     "function": "Extend wrist",
     "region": "Arm and Forearm",
-    "origin": "ateral epicondyle of humerus",
+    "origin": "lateral epicondyle of humerus",
     "insertion": "3rd metacarpal"
   },
   {
@@ -277,7 +277,7 @@ const muscleList = [
     "function": "Extend arm, adduct arm, medial rotation arm",
     "region": "Back and Shoulder",
     "origin": "spines of lower thoracic and all lumbar vertebrae AND iliac crest",
-    "insertion": "ntertubercular sulcus of humerus"
+    "insertion": "intertubercular sulcus of humerus"
   },
   {
     "muscle": "deltoid",
@@ -497,11 +497,11 @@ export const useMuscleList = () => {
   }, []);
 
   useEffect(() => {
-    const _filteredMuscleList = muscleList.filter(d => !seenCards.includes(d.muscle));
+    const _filteredMuscleList = muscleList
+      .filter(d => !seenCards.includes(d.muscle))
+      .filter(d => !(selectedFilters.length && !selectedFilters.includes(d.region)));
     setFilteredMuscleList(_filteredMuscleList);
   }, [seenCards]);
-
-  console.log(filteredMuscleList);
 
   // useEffect(() => {
   //   setFilteredMuscleList(processMuscleList(muscleList));
@@ -513,8 +513,6 @@ export const useMuscleList = () => {
     let _muscleList = muscleList
       .filter(d => !(selectedFilters.length && !selectedFilters.includes(d.region)))
       .filter(d => !seenCards.includes(d.muscle));
-
-    console.log(_muscleList);
 
     setFilteredMuscleList(_muscleList);
 
@@ -546,6 +544,9 @@ export const useMuscleList = () => {
   //   }
 
   // }, [seenCards])
+
+  console.log(selectedFilters)
+  console.log(filteredMuscleList)
 
   return {
     muscleList: filteredMuscleList,
