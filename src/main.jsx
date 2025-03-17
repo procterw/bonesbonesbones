@@ -5,6 +5,7 @@ import './index.css'
 import './App.css'
 import BonesApp from './BonesApp/index.jsx';
 import MusclesApp from './MusclesApp/index.jsx';
+import NeuroApp from './NeuroApp/index.jsx';
 
 const Tabs = () => {
   const { pathname } = useLocation();
@@ -44,6 +45,12 @@ const Tabs = () => {
       >
         Study Muscles 💪
       </Link>
+      <Link
+        to="/neuro"
+        style={linkStyle('/neuro')}
+      >
+        Study Neuro 🧠
+      </Link>
     </nav>
   )
 };
@@ -56,6 +63,7 @@ createRoot(document.getElementById('root')).render(
         <Routes>
           <Route index path="/bones" element={<BonesApp />} />
           <Route index path="/muscles" element={<MusclesApp />} />
+          <Route index path="/neuro" element={<NeuroApp />} />
           <Route index element={<Navigate to="/bones" />} />
         </Routes>
       </HashRouter>
