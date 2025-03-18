@@ -112,7 +112,7 @@ export const FlashcardSet = ({
               background: '#eee',
             }}
           >
-            Reveal Name
+            Reveal answer
           </button>
         )}
       </div>
@@ -189,7 +189,7 @@ export const FlashcardSet = ({
             background: '#dafcea',
           }}
         >
-          Knew it 🦴
+          Knew it 🧠
         </button>
       </div>
 
