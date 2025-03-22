@@ -335,64 +335,64 @@ const neuroList = [
     "definition": "transport nutrients to the spinal cord as well as protect it by cushioning impact; filled with CSF"
   },
   {
-    "name": "Cranial nerve I",
+    "name": "I Olfactory",
     "category": "cranial nerves",
-    "definition": "Olfactory (smell)"
+    "definition": "smell; smell aromatic substance like vanilla"
   },
   {
-    "name": "Cranial nerve II",
+    "name": "II Optic",
     "category": "cranial nerves",
-    "definition": "Optic (vision)"
+    "definition": "vision; test vision, visual field"
   },
   {
-    "name": "Cranial nerve III",
+    "name": "III Oculomotor",
     "category": "cranial nerves",
-    "definition": "Oculomotor (eye movement)"
+    "definition": "eye movement, pupil dilation; examine pupils, test pupilary reflex with light, test eye tracking"
   },
   {
-    "name": "Cranial nerve IV",
+    "name": "IV Trochlear",
     "category": "cranial nerves",
-    "definition": "Trochlear (eye movement)"
+    "definition": "eye movement; test eye tracking"
   },
   {
-    "name": "Cranial nerve V",
+    "name": "V Trigeminal",
     "category": "cranial nerves",
-    "definition": "Trigeminal (general sensation)"
+    "definition": "general facial sensation, chewing muscles"
   },
   {
-    "name": "Cranial nerve VI",
+    "name": "VI Abducens",
     "category": "cranial nerves",
-    "definition": "Abducens (eye movement)"
+    "definition": "eye movement; test eye tracking"
   },
   {
-    "name": "Cranial nerve VII",
+    "name": "VII Facial",
     "category": "cranial nerves",
-    "definition": "Facial (taste, facial movement)"
+    "definition": "taste, facial movement; test anterior 2/3 of tongue for taste, test facial symetry and movement"
   },
   {
-    "name": "Cranial nerve VIII",
+    "name": "VIII Vestibulocochlear",
     "category": "cranial nerves",
-    "definition": "Vestibulocochlear (hearing, balance)"
+    "definition": "hearing, balance; test hearing and bone conduction with tuning fork"
   },
   {
-    "name": "Cranial nerve IX",
+    "name": "IX Glossopharyngeal",
     "category": "cranial nerves",
-    "definition": "Glossopharyngeal (taste)"
+    "definition": "swallowing, taste for posterior 1/3 of tongue; check gag and swallow reflex, speak/cough"
   },
   {
-    "name": "Cranial nerve X",
+    "name": "X Vagus",
     "category": "cranial nerves",
-    "definition": "Vagus (taste)"
+    "definition": "swallowing, innervates parasympathetic nervous system; check gag and swallow reflex"
   },
   {
-    "name": "Cranial nerve XI",
+    "name": "XI Accessory",
     "category": "cranial nerves",
-    "definition": "Acessory (head and shoulder movement)"
+    "definition": "move head and neck; rotate head and shrug against resistance"
   },
   {
-    "name": "Cranial nerve XII",
+    "name": "XII Hypoglossal",
     "category": "cranial nerves",
-    "definition": "Hypoglossal (tongue movement)"
+    "definition": "moves tongue; test protraction and retraction of tongue"
   },
   {
     "name": "dura mater",
@@ -413,6 +413,41 @@ const neuroList = [
     "name": "subarachnoid space",
     "category": "meninges",
     "definition": "filled with CSF and large blood vessels"
+  },
+  {
+    "name": "conus medullaris",
+    "category": "spinal cord structures",
+    "definition": "the tapered, lower end of the spinal cord"
+  },
+  {
+    "name": "cauda equina",
+    "category": "spinal cord structures",
+    "definition": "a bundle of spinal nerves below the spinal cord"
+  },
+  {
+    "name": "anterior median fissure",
+    "category": "spinal cord structures",
+    "definition": "a deep midline groove of the anterior spinal cord"
+  },
+  {
+    "name": "somatic sensory interneurons",
+    "category": "spinal cord structures",
+    "definition": ""
+  },
+  {
+    "name": "visceral sensory interneurons",
+    "category": "spinal cord structures",
+    "definition": ""
+  },
+  {
+    "name": "visceral (autonomic) motor neurons",
+    "category": "spinal cord structures",
+    "definition": ""
+  },
+  {
+    "name": "somatic motor neurons",
+    "category": "spinal cord structures",
+    "definition": ""
   }
 ];
 
