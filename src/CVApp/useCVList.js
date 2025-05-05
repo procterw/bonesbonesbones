@@ -2,592 +2,747 @@ const cvList = [
   {
     "name": "pericardial cavity",
     "category": "heart anatomy",
-    "definition": ""
+    "notes": ""
   },
   {
     "name": "visceral pericardium (aka. Epicardium)",
     "category": "heart anatomy",
-    "definition": ""
+    "notes": ""
   },
   {
     "name": "parietal pericardium",
     "category": "heart anatomy",
-    "definition": ""
+    "notes": ""
   },
   {
     "name": "endocardium",
     "category": "heart anatomy",
-    "definition": ""
+    "notes": ""
   },
   {
     "name": "myocardium",
     "category": "heart anatomy",
-    "definition": ""
+    "notes": ""
   },
   {
     "name": "systemic circulation",
     "category": "heart anatomy",
-    "definition": ""
+    "notes": ""
   },
   {
     "name": "pulmonary circulation",
     "category": "heart anatomy",
-    "definition": ""
+    "notes": ""
   },
   {
     "name": "left common carotid artery",
     "category": "heart anatomy",
-    "definition": ""
+    "notes": ""
   },
   {
     "name": "left subclavian artery",
     "category": "heart anatomy",
-    "definition": ""
+    "notes": ""
   },
   {
     "name": "aortic arch",
     "category": "heart anatomy",
-    "definition": ""
+    "notes": ""
   },
   {
     "name": "ligamentum arteriosum",
     "category": "heart anatomy",
-    "definition": ""
+    "notes": ""
   },
   {
     "name": "left pulmonary artery",
     "category": "heart anatomy",
-    "definition": ""
+    "notes": ""
   },
   {
     "name": "left pulmonary veins",
     "category": "heart anatomy",
-    "definition": ""
+    "notes": ""
   },
   {
     "name": "auricle",
     "category": "heart anatomy",
-    "definition": ""
+    "notes": ""
   },
   {
     "name": "circumflex artery",
     "category": "heart anatomy",
-    "definition": ""
+    "notes": ""
   },
   {
     "name": "left coronary artery (in coronary sulcus)",
     "category": "heart anatomy",
-    "definition": ""
+    "notes": ""
   },
   {
     "name": "great cardiac vein",
     "category": "heart anatomy",
-    "definition": ""
+    "notes": ""
   },
   {
     "name": "anterior interventricular artery",
     "category": "heart anatomy",
-    "definition": ""
+    "notes": ""
   },
   {
     "name": "apex",
     "category": "heart anatomy",
-    "definition": ""
+    "notes": ""
   },
   {
     "name": "brachipcephalic trunk",
     "category": "heart anatomy",
-    "definition": ""
+    "notes": ""
   },
   {
     "name": "superior vena cava",
     "category": "heart anatomy",
-    "definition": ""
+    "notes": ""
   },
   {
     "name": "right pulmonary artery",
     "category": "heart anatomy",
-    "definition": ""
+    "notes": ""
   },
   {
     "name": "ascending aorta",
     "category": "heart anatomy",
-    "definition": ""
+    "notes": ""
   },
   {
     "name": "pulmonary trunk",
     "category": "heart anatomy",
-    "definition": ""
+    "notes": ""
   },
   {
     "name": "right pulmonary veins",
     "category": "heart anatomy",
-    "definition": ""
+    "notes": ""
   },
   {
     "name": "anterior cardiac vein",
     "category": "heart anatomy",
-    "definition": ""
+    "notes": ""
   },
   {
     "name": "right ventricle",
     "category": "heart anatomy",
-    "definition": ""
+    "notes": ""
   },
   {
     "name": "marginal artery",
     "category": "heart anatomy",
-    "definition": ""
+    "notes": ""
   },
   {
     "name": "small cardiac vein",
     "category": "heart anatomy",
-    "definition": ""
+    "notes": ""
   },
   {
     "name": "inferior vena cava",
     "category": "heart anatomy",
-    "definition": ""
+    "notes": ""
   },
   {
     "name": "left atrium",
     "category": "heart anatomy",
-    "definition": ""
+    "notes": ""
   },
   {
-    "name": "mitral (bicuspid) valve",
+    "name": "mitral (bicuspid) (left AV) valve",
     "category": "heart anatomy",
-    "definition": ""
+    "notes": ""
   },
   {
     "name": "pulmonary valve",
     "category": "heart anatomy",
-    "definition": ""
+    "notes": ""
   },
   {
     "name": "left ventricle",
     "category": "heart anatomy",
-    "definition": ""
+    "notes": ""
   },
   {
     "name": "papillary muscle",
     "category": "heart anatomy",
-    "definition": ""
+    "notes": ""
   },
   {
     "name": "interventricular septum",
     "category": "heart anatomy",
-    "definition": ""
+    "notes": ""
   },
   {
     "name": "myocardium (alternate view)",
     "category": "heart anatomy",
-    "definition": ""
+    "notes": ""
   },
   {
     "name": "right atrium",
     "category": "heart anatomy",
-    "definition": ""
+    "notes": ""
   },
   {
     "name": "fossa ovale",
     "category": "heart anatomy",
-    "definition": ""
+    "notes": ""
   },
   {
     "name": "tricuspid valve",
     "category": "heart anatomy",
-    "definition": ""
+    "notes": ""
   },
   {
     "name": "chordae tendinae",
     "category": "heart anatomy",
-    "definition": ""
+    "notes": ""
   },
   {
     "name": "trabeculae carneae",
     "category": "heart anatomy",
-    "definition": ""
+    "notes": ""
   },
   {
-    "name": "arch of aorta (posterior)",
+    "name": "arch of aorta (posterior view)",
     "category": "heart anatomy",
-    "definition": ""
+    "notes": ""
   },
   {
-    "name": "left pulmonary artery (posterior)",
+    "name": "left pulmonary artery (posterior view)",
     "category": "heart anatomy",
-    "definition": ""
+    "notes": ""
   },
   {
-    "name": "left pulmonary veins (posterior)",
+    "name": "left pulmonary veins (posterior view)",
     "category": "heart anatomy",
-    "definition": ""
+    "notes": ""
   },
   {
-    "name": "left atrium (posterior)",
+    "name": "left atrium (posterior view)",
     "category": "heart anatomy",
-    "definition": ""
+    "notes": ""
   },
   {
-    "name": "left ventricle (posterior)",
+    "name": "left ventricle (posterior view)",
     "category": "heart anatomy",
-    "definition": ""
+    "notes": ""
   },
   {
-    "name": "coronary sinus (posterior)",
+    "name": "coronary sinus (posterior view)",
     "category": "heart anatomy",
-    "definition": ""
+    "notes": ""
   },
   {
-    "name": "right ventricle (posterior)",
+    "name": "right ventricle (posterior view)",
     "category": "heart anatomy",
-    "definition": ""
+    "notes": ""
   },
   {
-    "name": "inferior vena cava (posterior)",
+    "name": "inferior vena cava (posterior view)",
     "category": "heart anatomy",
-    "definition": ""
+    "notes": ""
   },
   {
-    "name": "right pulmonary veins (posterior)",
+    "name": "right pulmonary veins (posterior view)",
     "category": "heart anatomy",
-    "definition": ""
+    "notes": ""
   },
   {
-    "name": "superior vena cava (posterior)",
+    "name": "superior vena cava (posterior view)",
     "category": "heart anatomy",
-    "definition": ""
-  },
-  {
-    "name": "AV valve (open, closed)",
-    "category": "heart anatomy",
-    "definition": ""
-  },
-  {
-    "name": "SL (semiulunar) valves (open and closed)",
-    "category": "heart anatomy",
-    "definition": ""
+    "notes": ""
   },
   {
     "name": "left coronary artery",
     "category": "heart anatomy",
-    "definition": ""
+    "notes": ""
   },
   {
     "name": "right coronary artery",
     "category": "heart anatomy",
-    "definition": ""
+    "notes": ""
   },
   {
     "name": "ventricular contraction, relaxation",
     "category": "heart (other)",
-    "definition": ""
+    "notes": ""
   },
   {
     "name": "atherosclerosis",
     "category": "heart (other)",
-    "definition": ""
+    "notes": ""
   },
   {
     "name": "angioplasty (with stent)",
     "category": "heart (other)",
-    "definition": ""
+    "notes": ""
   },
   {
     "name": "coronary bypass surgery (CABG)",
     "category": "heart (other)",
-    "definition": ""
+    "notes": ""
   },
   {
     "name": "hypertrophic cardiomyopathy (HCM)",
     "category": "heart (other)",
-    "definition": ""
+    "notes": ""
   },
   {
     "name": "dilated cardiomyopathy (DCM)",
     "category": "heart (other)",
-    "definition": ""
+    "notes": ""
   },
   {
     "name": "cardiac muscle cell (single nucleus)",
     "category": "cardiac muscle",
-    "definition": ""
+    "notes": ""
   },
   {
     "name": "cardiac muscle cell (intercalcated discs)",
     "category": "cardiac muscle",
-    "definition": ""
+    "notes": ""
   },
   {
     "name": "cardiac muscle cell (striations)",
     "category": "cardiac muscle",
-    "definition": ""
+    "notes": ""
   },
   {
     "name": "cardiac muscle cell (gap function, electrical current)",
     "category": "cardiac muscle",
-    "definition": ""
+    "notes": ""
   },
   {
     "name": "cardiac muscle cell (desmosome)",
     "category": "cardiac muscle",
-    "definition": ""
+    "notes": ""
   },
   {
     "name": "Sinoatrial (SA) node (pacemaker)",
     "category": "heart (electrical)",
-    "definition": ""
+    "notes": ""
   },
   {
     "name": "internodal pathway",
     "category": "heart (electrical)",
-    "definition": ""
+    "notes": ""
   },
   {
     "name": "atrioventricular (AV) node",
     "category": "heart (electrical)",
-    "definition": ""
+    "notes": ""
   },
   {
     "name": "atrioventricular (AV) bundle (Bundle of His)",
     "category": "heart (electrical)",
-    "definition": ""
+    "notes": ""
   },
   {
     "name": "perkinje fibers",
     "category": "heart (electrical)",
-    "definition": ""
+    "notes": ""
   },
   {
     "name": "parasympathetic stimulation",
     "category": "heart (electrical)",
-    "definition": ""
+    "notes": ""
   },
   {
     "name": "sympathetic stimulation",
     "category": "heart (electrical)",
-    "definition": ""
+    "notes": ""
   },
   {
     "name": "sympathetic cardiac nerve",
     "category": "heart (electrical)",
-    "definition": ""
+    "notes": ""
   },
   {
     "name": "vagus nerve",
     "category": "heart (electrical)",
-    "definition": ""
+    "notes": ""
   },
   {
     "name": "sympathetic trunk ganglion",
     "category": "heart (electrical)",
-    "definition": ""
+    "notes": ""
   },
   {
     "name": "medulla oblongata",
     "category": "heart (electrical)",
-    "definition": ""
+    "notes": ""
   },
   {
     "name": "cardiac center (of medulla oblongata)",
     "category": "heart (electrical)",
-    "definition": ""
+    "notes": ""
   },
   {
     "name": "ECG T wave (ventricular repolarization)",
     "category": "heart (electrical)",
-    "definition": ""
+    "notes": ""
   },
   {
     "name": "ECG P wave (atrial depolarization)",
     "category": "heart (electrical)",
-    "definition": ""
+    "notes": ""
   },
   {
     "name": "ECG QRS complex (ventricular depolarization)",
     "category": "heart (electrical)",
-    "definition": ""
+    "notes": ""
   },
   {
     "name": "ECG junctional rhythm",
     "category": "heart (electrical)",
-    "definition": ""
+    "notes": ""
   },
   {
     "name": "ECG second-degree heart block",
     "category": "heart (electrical)",
-    "definition": ""
+    "notes": ""
   },
   {
     "name": "ventricular fibrilation",
     "category": "heart (electrical)",
-    "definition": ""
+    "notes": ""
   },
   {
     "name": "EDV (end diastolic volume)",
     "category": "blood pressure",
-    "definition": ""
+    "notes": ""
   },
   {
     "name": "stroke volume",
     "category": "blood pressure",
-    "definition": ""
+    "notes": ""
   },
   {
     "name": "ESV (end systolic volume)",
     "category": "blood pressure",
-    "definition": ""
+    "notes": ""
   },
   {
     "name": "Vein",
     "category": "veins and arteries",
-    "definition": ""
+    "notes": ""
   },
   {
     "name": "Venule",
     "category": "veins and arteries",
-    "definition": ""
+    "notes": ""
   },
   {
     "name": "Capillaries",
     "category": "veins and arteries",
-    "definition": ""
+    "notes": ""
   },
   {
     "name": "Arteriole",
     "category": "veins and arteries",
-    "definition": ""
+    "notes": ""
   },
   {
     "name": "Artery",
     "category": "veins and arteries",
-    "definition": ""
+    "notes": ""
   },
   {
     "name": "Serosa (epithelial cells)",
     "category": "veins and arteries",
-    "definition": ""
+    "notes": ""
   },
   {
     "name": "Tunica externa (loose fibrous connective tissue)",
     "category": "veins and arteries",
-    "definition": ""
+    "notes": ""
   },
   {
     "name": "Tunica media",
     "category": "veins and arteries",
-    "definition": ""
+    "notes": ""
   },
   {
     "name": "elastin",
     "category": "veins and arteries",
-    "definition": ""
+    "notes": ""
   },
   {
     "name": "Tunica intima",
     "category": "veins and arteries",
-    "definition": ""
+    "notes": ""
   },
   {
     "name": "arterioles",
     "category": "veins and arteries",
-    "definition": ""
+    "notes": ""
   },
   {
     "name": "muscular arteries",
     "category": "veins and arteries",
-    "definition": ""
+    "notes": ""
   },
   {
     "name": "elastic arteries",
     "category": "veins and arteries",
-    "definition": ""
+    "notes": ""
   },
   {
     "name": "arteriole (histology)",
     "category": "veins and arteries",
-    "definition": ""
+    "notes": ""
   },
   {
     "name": "muscular (distributing)",
     "category": "veins and arteries",
-    "definition": ""
+    "notes": ""
   },
   {
     "name": "elastic (conducting)",
     "category": "veins and arteries",
-    "definition": ""
+    "notes": ""
   },
   {
     "name": "sinusoidal cappilaries",
     "category": "veins and arteries",
-    "definition": ""
+    "notes": ""
   },
   {
     "name": "fenestrated capillaries",
     "category": "veins and arteries",
-    "definition": ""
+    "notes": ""
   },
   {
     "name": "continuous capillaries",
     "category": "veins and arteries",
-    "definition": ""
+    "notes": ""
   },
   {
     "name": "precapillary sphincters",
     "category": "veins and arteries",
-    "definition": ""
+    "notes": ""
   },
   {
     "name": "varicose vein",
     "category": "veins and arteries",
-    "definition": ""
+    "notes": ""
   },
   {
     "name": "valve (vein)",
     "category": "veins and arteries",
-    "definition": ""
+    "notes": ""
   },
   {
     "name": "diastolic pressure",
     "category": "blood pressure",
-    "definition": ""
+    "notes": ""
   },
   {
     "name": "mean pressure",
     "category": "blood pressure",
-    "definition": ""
+    "notes": ""
   },
   {
     "name": "systolic pressure",
     "category": "blood pressure",
-    "definition": ""
+    "notes": ""
   },
   {
     "name": "aortic chemoreceptor",
     "category": "blood pressure",
-    "definition": ""
+    "notes": ""
   },
   {
     "name": "aortic baroreceptor",
     "category": "blood pressure",
-    "definition": ""
+    "notes": ""
   },
   {
     "name": "carotid body chemoreceptor",
     "category": "blood pressure",
-    "definition": ""
+    "notes": ""
   },
   {
     "name": "corotid sinus baroreceptor",
     "category": "blood pressure",
-    "definition": ""
+    "notes": ""
   },
   {
     "name": "vasomotor neurons",
     "category": "blood pressure",
-    "definition": ""
+    "notes": ""
+  },
+  {
+    "name": "posterior tibial vein",
+    "category": "veins and arteries (names)",
+    "notes": ""
+  },
+  {
+    "name": "femoral vein",
+    "category": "veins and arteries (names)",
+    "notes": ""
+  },
+  {
+    "name": "fibular vein",
+    "category": "veins and arteries (names)",
+    "notes": ""
+  },
+  {
+    "name": "great saphenous vein",
+    "category": "veins and arteries (names)",
+    "notes": ""
+  },
+  {
+    "name": "ulnar vein",
+    "category": "veins and arteries (names)",
+    "notes": ""
+  },
+  {
+    "name": "brachial vein",
+    "category": "veins and arteries (names)",
+    "notes": ""
+  },
+  {
+    "name": "radial vein",
+    "category": "veins and arteries (names)",
+    "notes": ""
+  },
+  {
+    "name": "axillary vein",
+    "category": "veins and arteries (names)",
+    "notes": ""
+  },
+  {
+    "name": "brachiocephalic vein",
+    "category": "veins and arteries (names)",
+    "notes": ""
+  },
+  {
+    "name": "subclavian vein",
+    "category": "veins and arteries (names)",
+    "notes": ""
+  },
+  {
+    "name": "hepatic portal vein",
+    "category": "veins and arteries (names)",
+    "notes": ""
+  },
+  {
+    "name": "external jugular vein",
+    "category": "veins and arteries (names)",
+    "notes": ""
+  },
+  {
+    "name": "internal jugular vein",
+    "category": "veins and arteries (names)",
+    "notes": ""
+  },
+  {
+    "name": "posterior tibial artery",
+    "category": "veins and arteries (names)",
+    "notes": ""
+  },
+  {
+    "name": "popliteal artery",
+    "category": "veins and arteries (names)",
+    "notes": ""
+  },
+  {
+    "name": "fibular artery",
+    "category": "veins and arteries (names)",
+    "notes": ""
+  },
+  {
+    "name": "femoral artery",
+    "category": "veins and arteries (names)",
+    "notes": ""
+  },
+  {
+    "name": "common iliac artery",
+    "category": "veins and arteries (names)",
+    "notes": ""
+  },
+  {
+    "name": "renal artery",
+    "category": "veins and arteries (names)",
+    "notes": ""
+  },
+  {
+    "name": "celiac trunk",
+    "category": "veins and arteries (names)",
+    "notes": ""
+  },
+  {
+    "name": "ulnar artery",
+    "category": "veins and arteries (names)",
+    "notes": ""
+  },
+  {
+    "name": "radial artery",
+    "category": "veins and arteries (names)",
+    "notes": ""
+  },
+  {
+    "name": "brachial artery",
+    "category": "veins and arteries (names)",
+    "notes": ""
+  },
+  {
+    "name": "axillary artery",
+    "category": "veins and arteries (names)",
+    "notes": ""
+  },
+  {
+    "name": "brachiocephalic trunk",
+    "category": "veins and arteries (names)",
+    "notes": ""
+  },
+  {
+    "name": "subclavian artery",
+    "category": "veins and arteries (names)",
+    "notes": ""
+  },
+  {
+    "name": "external carotid artery",
+    "category": "veins and arteries (names)",
+    "notes": ""
+  },
+  {
+    "name": "internal carotid artery",
+    "category": "veins and arteries (names)",
+    "notes": ""
+  },
+  {
+    "name": "common carotid artery",
+    "category": "veins and arteries (names)",
+    "notes": ""
+  },
+  {
+    "name": "subclavian artery",
+    "category": "veins and arteries (names)",
+    "notes": ""
+  },
+  {
+    "name": "subclavian vein",
+    "category": "veins and arteries (names)",
+    "notes": ""
+  },
+  {
+    "name": "ulnar artery",
+    "category": "veins and arteries (names)",
+    "notes": ""
+  },
+  {
+    "name": "ulnar vein",
+    "category": "veins and arteries (names)",
+    "notes": ""
   }
 ];
 
